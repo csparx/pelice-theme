@@ -1,0 +1,138 @@
+@media screen and (max-device-width: 550px) {
+  /* Foundation */
+  .home-header{
+    background: none;
+  }
+  #breadcrumbs{
+    margin: 20px 0 25px 40px;
+    font-size: 24px;
+  }
+  .page-title{
+    left: 40px;
+  }
+  .wrap-true{
+    flex-wrap: wrap;
+  }
+  .one-half {
+    flex: 1 100%;
+  }
+  .white-btn, .green-btn{
+    font-size: 22px;
+  }
+  /* Main Nav */
+  .nav-container{
+    width: 100%;
+  }
+  .mainWrap {
+    width: auto;
+    padding: 50px 20px;
+  }
+
+  .menu {
+    display: none;
+    padding-left: 0px;
+  }
+
+  .responsive-menu {
+    display: block;
+    background: black;
+  }
+
+  nav {
+    margin: 0;
+    background: none;
+  }
+
+  .menu li {
+    display: block;
+    margin: 0;
+  }
+
+  .menu li a {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  .responsive-menu{
+    font-size: 26px;
+  }
+
+  .menu ul li a{
+    font-size: 30px;
+  }
+
+  .menu li a:hover,.menu li:hover>a {
+    color: #fff;
+  }
+
+  .menu ul {
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: initial;
+  }
+
+  .menu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transform: initial;
+  }
+
+  .menu ul ul {
+    left: 0;
+    transform: initial;
+  }
+
+  .menu li>ul ul:hover {
+    transform: initial;
+  }
+  .menu ul:after{
+    left: 50%;
+  }
+
+  /* Header */
+  #header-logo{
+    height: 200px;
+    margin: 10px 40px;
+  }
+  #checkbox1:checked + label #top-menu li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox1:checked + label #top-menu {
+    height: 800px;
+  }
+  #top-menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+  }
+  #top-menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #top-menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-size: 28px;
+  }
+
+
+}
