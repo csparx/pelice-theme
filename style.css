@@ -238,17 +238,6 @@ header{
 * Slider Classes
 */
 .center-absolute{
-  /*align-items: center;
-  position: absolute;
-  z-index: 1;
-  margin: auto;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;*/
   align-items: center;
   position: absolute;
   z-index: 1;
@@ -256,7 +245,6 @@ header{
   width: 100%;
   height: auto;
   display: block;
-  /*margin-top: 15%;*/
   margin-top: 3%;
 }
 .center-absolute img {
@@ -274,7 +262,7 @@ header{
   margin: 0!important;
 }
 .flexslider > .slick-list > .slick-track > .slick-slide img{
-  width: 75%;
+  width: 100%;
   height: 100%;
 }
 .flexslider > .slick-list > .slick-track > .slick-slide{
@@ -303,7 +291,7 @@ a.news-title {
     width: 75%;
 }
 .news-excerpt {
-    background: rgba(0, 0, 0, 0.5);
+    background: #002135;
     color: white;
     padding: 0px 20px 20px 02px;
     font-size: 18px;
@@ -313,18 +301,18 @@ a.news-title {
 }
 .news-excerpt p:first-of-type{
 	padding-top: 20px;
+  margin-top: 0px!important;
+}
+.title-wrap {
+    width: 75%;
+    float: left;
 }
 .news-slide {
-/*    position: absolute;
-    width: 50%;
-    top: 11%;
-    left: 28%;
-    padding: 20px 0px 0px 0px;
-    background: rgba(0, 47, 77, 0.84);*/
+    width: 25%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
 }
-.title-wrap{
-}
-
 
 
 
