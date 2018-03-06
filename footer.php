@@ -30,7 +30,7 @@
 
 <div class="flex dark-bg justify-right">
   <div class="wrapper">
-    <p class="copyright"> Copyright 2017. All Rights Reserved.</p>
+    <p class="copyright"> Copyright <?php echo date("Y"); ?>. All Rights Reserved.</p>
   </div>
 </div>
 

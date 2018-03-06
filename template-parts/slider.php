@@ -25,16 +25,22 @@
         <div class="slider-news">
           
           <div class="title-wrap">
-            <a class="news-title" href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a>
+            <a class="news-title" href="<?php the_permalink(); ?>">
+              <?php echo the_title(); ?>
+              <h4 class="news-excerpt"><?php echo wp_trim_words( get_the_excerpt(), 10, '...' ); ?></h4>
+              
+            </a>
+            
+
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slide<?php echo $counter; ?>.jpg" />
           </div>
           
 
-          <div class="news-slide">
+          <!-- <div class="news-slide">
             <div class="news-excerpt">
-              <?php the_excerpt(); ?>
+              
             </div>
-          </div>
+          </div> -->
 
         </div>
         <?php $counter++; ?>

@@ -288,13 +288,14 @@ a.news-title {
     position: absolute;
     text-align: center;
     top: 50%;
-    width: 75%;
+    width: 100%;
 }
 .news-excerpt {
     background: #002135;
     color: white;
-    padding: 0px 20px 20px 02px;
+    padding: 20px 0px;
     font-size: 18px;
+    margin-bottom: 0px;
 }
 .news-excerpt p {
 	padding-left: 20px;
@@ -304,7 +305,7 @@ a.news-title {
   margin-top: 0px!important;
 }
 .title-wrap {
-    width: 75%;
+    width: 100%;
     float: left;
 }
 .news-slide {
@@ -312,6 +313,9 @@ a.news-title {
     float: left;
     margin: 0px;
     padding: 0px;
+}
+.home-slider{
+  background: #002136;
 }
 
 
