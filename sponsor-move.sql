@@ -1,0 +1,2 @@
+UPDATE `wp_posts` SET `post_type` = REPLACE(`post_type`, 'cr3ativsponsor', 'cns_sponsor') WHERE `post_type` LIKE '%cr3ativsponsor%' COLLATE utf8mb4_bin;
+UPDATE `wp_posts` SET `guid` = REPLACE(`guid`, 'http://pelice:8888/?post_type=cr3ativsponsor', 'http://pelice:8888/?post_type=cns_sponsor') WHERE `guid` LIKE '%http://pelice:8888/?post_type=cr3ativsponsor%' COLLATE utf8mb4_bin;

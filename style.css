@@ -41,6 +41,13 @@ header{
 .justify-right{
   justify-content: flex-end;
 }
+.black{
+  background: black;
+  color: white;
+}
+.clear{
+  clear: both;
+}
 
 /**
 * Text Classes
@@ -269,33 +276,31 @@ header{
   height: 550px;
 }
 a.news-title {
-    background: #00304d;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 20px;
+  color: white;
+  padding: 10px 0px;
+  font-size: 38px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  background: #00304d;
+  margin: 0px 0px 20px 0px;
+  padding-bottom: 0px;
 }
-a.news-title {
-    color: white;
-    padding: 10px 0px;
-    font-size: 38px;
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+.news-header{
+  padding: 0px 20px 10px 20px;
+  margin: 0px auto;
 }
 .news-excerpt {
-    background: #002135;
-    color: white;
-    padding: 20px 0px;
-    font-size: 18px;
-    margin-bottom: 0px;
+  background: #002135;
+  color: white;
+  padding: 20px 0px;
+  font-size: 18px;
+  margin-bottom: 0px;
 }
 .news-excerpt p {
 	padding-left: 20px;
@@ -317,10 +322,46 @@ a.news-title {
 .home-slider{
   background: #002136;
 }
+.news-title p{
+  margin: 0px;
+}
 
-
-
-
+/**
+* ABOUT
+*/
+#about{
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+  padding: 20px 0px;
+  overflow: auto;
+}
+.about-header{
+  float: left;
+  width: 20%;
+  font-size: 28px;
+  text-align: center;
+}
+.about-body{
+  float: left;
+  width: 60%;
+}
+.about-btn{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.about-btn-wrapper{
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+  margin: auto auto;
+  width: 50%;
+}
+.about-hr{
+  border: 1px solid #002135;
+  width: 50%;
+}
 
 
 
