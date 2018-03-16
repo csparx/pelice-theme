@@ -3,6 +3,56 @@
 * Homepage slider
 */
 ?>
+
+<div class="pelice-info">
+  <div class="info-text">
+    <h1>APRIL 13-14, 2018 / ATLANTA, GEORGIA, USA</h1>
+    <h3>The Educational and Training Event For The Benefit Of The Worldwide Structural, Non-Structural Wood Panel, Engineered Lumber, Components, and Laminates and Value-Added Industries</h3>
+    <!-- <h1>By Industry People For Industry People</h1> -->
+    <div class="register-home-btn">REGISTER TODAY</div>
+  </div>
+</div>
+
+
+<?php
+if( is_home() ){
+  echo '</div>';
+}
+?>
+
+<script type="text/javascript">
+// Can also be used with $(document).ready()
+jQuery(function ($) {
+  $('.flexslider').slick({
+    infinite: true,
+    fade: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php /*
 <div class="home-slider">
 
   <div class="center-absolute" id="logodiv">
@@ -47,32 +97,8 @@
       ?>
   </div>
 
-
-
-
-
-
-
-
-
-
-    
   </div>
-
-
 
 </div>
 
-<script type="text/javascript">
-// Can also be used with $(document).ready()
-jQuery(function ($) {
-  $('.flexslider').slick({
-    infinite: true,
-    fade: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  });
-
-});
-</script>
+*/ ?>

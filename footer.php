@@ -1,7 +1,6 @@
 <div class="flex footer-container">
   
-  <?php /*
-  <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo.png" />
+  <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/pelice-logo.png" />
 
   <?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) { ?>
   	<ul id="sidebar">
@@ -23,8 +22,6 @@
       <?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>
     </ul>
   <?php } ?>
-
-  */ ?>
 
 </div>
 

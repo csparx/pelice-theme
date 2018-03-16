@@ -11,10 +11,16 @@
 
   </head>
   <body>
+
+  	<?php
+  	if( is_home() ){
+  		echo '<div class="homepage-bg">';
+  	}
+  	?>
     <header>
     	<div class="wrapper">
     		<div class="logo-header">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pelice-logo.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pelice-logo-white.png" alt="">
 			</div>
     	</div>
 		
@@ -32,30 +38,32 @@
 	          ?>
 	        </div>
 
-	      </nav>
+	     </nav>
+    </header>
 
-	      <script type="text/javascript">
-	        jQuery(function ($) {
-	          var touch 	= $('#resp-menu');
-	          var menu 	= $('.menu');
 
-	          $(touch).on('click', function(e) {
-	            e.preventDefault();
-	            menu.slideToggle();
-	          });
+<script type="text/javascript">
+jQuery(function ($) {
+  var touch 	= $('#resp-menu');
+  var menu 	= $('.menu');
 
-	          $(window).resize(function(){
-	            var w = $(window).width();
-	            if(w > 767 && menu.is(':hidden')) {
-	              menu.removeAttr('style');
-	            }
-	          });
+  $(touch).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
 
-	          $("a").each(function() {
-	            if ($(this).attr('href').trim() == "<?php echo home_url(); ?>/register/") {
-	                $(this).addClass("register-link");
-	            }
-	          });
+  $(window).resize(function(){
+    var w = $(window).width();
+    if(w > 767 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+  });
 
-	        });
-	      </script>
+  $("a").each(function() {
+    if ($(this).attr('href').trim() == "<?php echo home_url(); ?>/register/") {
+        $(this).addClass("register-link");
+    }
+  });
+
+});
+</script>

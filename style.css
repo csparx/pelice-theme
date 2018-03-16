@@ -9,6 +9,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: peliceexpo
 */
 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i');
+
 /**
 * Foundation Classes
 */
@@ -23,14 +25,15 @@ body{
   margin: 0px;
 }
 header{
-	/*background: #00304c;*/
+  display: flex;
+  justify-content: center;
+/*  background: rgba(0,0,0,.3);*/
 }
 .flex{
   display: flex;
 }
 .wrapper{
-	width: 80%;
-	margin: 0px auto;
+
 }
 .dark-bg{
   background-color: #363636;
@@ -48,6 +51,19 @@ header{
 .clear{
   clear: both;
 }
+.black-bg{
+  background: url(assets/img/zig-zag-wool.png) repeat;
+  padding: 50px;
+}
+.darkblue-bg{
+  background-color: #164778;
+  background-image: url(assets/img/dark-circles.png);
+  padding: 25px 50px;
+}
+.white-bg{
+  background: url(assets/img/circles-light.png) repeat;
+  padding: 20px 50px;
+}
 
 /**
 * Text Classes
@@ -57,17 +73,65 @@ header{
   text-align: right;
   margin-right: 20px;
 }
+a{
+  text-decoration: none;
+}
 
 /**
 * Header
 */
+.pelice-info{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+
+}
+.pelice-info h1{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+  font-size: 40px;
+}
+.pelice-info h3{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  background-color: #0080bf;
+  padding: 10px 20px;
+}
+.register-home-btn{
+  background-color: #000000;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 100;
+  margin: 0px auto;
+}
+.info-text{
+  max-width: 55%;
+  text-align: center;
+}
+.homepage-bg{
+  background: url(assets/img/home-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+}
 .logo-header img{
-	margin: 10px auto;
 	display: block;
-	width: 500px;
+  width: 350px;
+  margin: 20px 0px;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 .nav-main{
-	background: #00304c;
+  font-family: 'PT Sans', sans-serif;
+  align-self: center;
 }
 #magnifying-glass{
   background: #ffffff;
@@ -100,7 +164,7 @@ header{
   list-style-type: none;
 }
 .register-link{
-	background: red;
+
 }
 
 /**
@@ -127,12 +191,13 @@ header{
     text-decoration: none;
     padding: 20px 15px;
     display: block;
-    color: white;
+    color: #fff;
     transition: all 0.2s ease-in-out 0s;
+    font-size: 16px;
 }
 
 .menu li a:hover,.menu li:hover>a {
-    color: #fbff26;
+    color: #134879;
 }
 
 .menu ul {
@@ -225,7 +290,7 @@ header{
     display: none;
     width: auto;
     padding: 20px 15px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -242,127 +307,118 @@ header{
 }
 
 /**
-* Slider Classes
+* News Section
 */
-.center-absolute{
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  margin: auto;
+.news-header{
+  color: #000;
+  font-size: 56px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
+}
+.latest-news {
+  justify-content: center;
+  display: flex;
+}
+.news-item {
+  background-color: #ffffff;
+  margin: 20px 15px;
+  padding: 20px;
+  width: 250px;
+}
+.latest-thumb {
   width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 3%;
-}
-.center-absolute img {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 350px;
-}
-.center-absolute h1{
-  display: table-cell;
-  vertical-align: middle;
-}
-.flexslider{
-  border: none!important;
-  margin: 0!important;
-}
-.flexslider > .slick-list > .slick-track > .slick-slide img{
-  width: 100%;
-  height: 100%;
-}
-.flexslider > .slick-list > .slick-track > .slick-slide{
-  height: 550px;
+  overflow: hidden;
 }
 a.news-title {
-  color: white;
-  padding: 10px 0px;
-  font-size: 38px;
-  text-align: center;
+  color: black;
   text-decoration: none;
-  position: absolute;
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-  background: #00304d;
-  margin: 0px 0px 20px 0px;
-  padding-bottom: 0px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
-.news-header{
-  padding: 0px 20px 10px 20px;
-  margin: 0px auto;
+.latest-thumb img {
+  /* width: 100%; */
+  height: 200px;
+  width: auto;
 }
-.news-excerpt {
-  background: #002135;
-  color: white;
-  padding: 20px 0px;
-  font-size: 18px;
-  margin-bottom: 0px;
+.news-info{
+  margin-top: 10px;
 }
-.news-excerpt p {
-	padding-left: 20px;
+.news-info p{
+  font-family: 'PT Serif', serif;
 }
-.news-excerpt p:first-of-type{
-	padding-top: 20px;
-  margin-top: 0px!important;
-}
-.title-wrap {
-    width: 100%;
-    float: left;
-}
-.news-slide {
-    width: 25%;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-.home-slider{
-  background: #002136;
-}
-.news-title p{
-  margin: 0px;
-}
+
 
 /**
-* ABOUT
+* Speakers
 */
-#about{
-  width: 80%;
-  margin: 0px auto;
-  display: block;
-  padding: 20px 0px;
-  overflow: auto;
-}
-.about-header{
-  float: left;
-  width: 20%;
-  font-size: 28px;
-  text-align: center;
-}
-.about-body{
-  float: left;
-  width: 60%;
-}
-.about-btn{
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-.about-btn-wrapper{
-  background-color: red;
-  padding: 10px 20px;
+.speakers-carousel{
   color: white;
-  margin: auto auto;
-  width: 50%;
+  display: flex!important;
 }
-.about-hr{
-  border: 1px solid #002135;
-  width: 50%;
+.speaker-container a{
+  text-decoration: none;
+}
+.speaker-title{
+  color: #fff;
+  font-size: 56px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
+}
+.slick-arrow{
+  height: 75px;
+  align-self: center;
+}
+.slick-slide{
+  margin-right: 15px;
+}
+.speaker-name{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
+.speakers-carousel p{
+  font-family: 'PT Serif', serif;
 }
 
 
+/**
+* Sponsors
+*/
+.sponsors-carousel{
+  color: white;
+  display: flex!important;
+}
+.sponsor-level{
+  display: block;
+  color: white;
+  text-align: center;
+  width: 175px;
+  margin-top: -4px;
+  padding: 5px 0;
+}
+.gold-sponsor{
+  background: #ffde00;
+}
+.silver-sponsor{
+  background: #cccccc;
+}
+.bronze-sponsor{
+  background: #a36209;
+}
+.sponsor-title{
+  color: #000;
+  font-size: 56px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
+}
 
 
