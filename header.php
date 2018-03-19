@@ -20,11 +20,13 @@
     <header>
     	<div class="wrapper">
     		<div class="logo-header">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/pelice-logo-white.png" alt="">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pelice-logo<?php if( is_home() ){ echo'-white'; }?>.png" alt="">
+        </a>
 			</div>
     	</div>
 		
-		<nav class="nav-main">
+		<nav class="nav-main <?php if( !is_home() ){ echo 'page-nav'; } ?>">
 
 	        <div class="wrapper">
 	          <a id="resp-menu" class="responsive-menu" href="#"> Menu ☰</a>

@@ -14,7 +14,7 @@
 		    <div class="news-item">
 
 		      <div class="latest-thumb">
-		        <?php echo get_the_post_thumbnail( $post_id, 'medium' ); ?>
+		        <?php echo get_the_post_thumbnail( $post_id, 'news-homepage' ); ?>
 		      </div>
 
 		      <div class="news-info">

@@ -9,7 +9,7 @@
     <h1>APRIL 13-14, 2018 / ATLANTA, GEORGIA, USA</h1>
     <h3>The Educational and Training Event For The Benefit Of The Worldwide Structural, Non-Structural Wood Panel, Engineered Lumber, Components, and Laminates and Value-Added Industries</h3>
     <!-- <h1>By Industry People For Industry People</h1> -->
-    <div class="register-home-btn">REGISTER TODAY</div>
+    <a href="http://pelice-expo.com/register/"><div class="register-home-btn">REGISTER TODAY</div></a>
   </div>
 </div>
 
