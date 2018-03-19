@@ -20,6 +20,16 @@ function cns_enqueue_style() {
 add_action( 'wp_enqueue_scripts', 'cns_enqueue_style' );
 
 /**
+* Enable Featured Image on posts
+*/
+// Add theme support for Featured Images
+add_theme_support('post-thumbnails', array(
+    'post',
+    'page',
+    'custom-post-type-name',
+));
+
+/**
 * Registers Navigation menus for the main navigation bar and top social media bar
 */
 register_nav_menus( array(

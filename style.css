@@ -70,6 +70,9 @@ li {
 .flex{
   display: flex;
 }
+.none{
+  display: none!important;
+}
 
 /**
 * Text Classes
@@ -126,7 +129,7 @@ a{
   text-align: center;
 }
 .homepage-bg{
-  background: url(assets/img/home-bg.jpg) no-repeat center center fixed; 
+  background: url(assets/img/home-bg.jpg) no-repeat center bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -181,6 +184,14 @@ a{
 /**
 * Main Nav
 */
+.social-icons{
+  justify-content: center;
+  display: flex;
+  margin-top: -10px;
+}
+.social-icons a {
+    margin: 0px 10px;
+}
 
 .menu {
     display: block;

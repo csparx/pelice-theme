@@ -168,6 +168,9 @@
 
 @media screen and (max-device-width: 550px) {
   /* Foundation */
+  .social-icons{
+    margin-bottom: 30px;
+  }
   .news-item{
     width: 85%;
   }
