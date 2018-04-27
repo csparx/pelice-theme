@@ -42,7 +42,7 @@ get_header();
     <?php
     endwhile;
 
-    the_posts_pagination();
+    wpbeginner_numeric_posts_nav();
     ?>
     </div>
 
