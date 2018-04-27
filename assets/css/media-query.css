@@ -168,6 +168,9 @@
 
 @media screen and (max-device-width: 550px) {
   /* Foundation */
+  .footer-container > :nth-child(2){
+    flex-basis: 100%!important;
+  }
   .social-icons{
     margin-bottom: 30px;
   }
@@ -176,6 +179,7 @@
   }
   .latest-thumb img{
     width: 100%!important;
+    height: auto;
   }
   .news-header,.speaker-title,.sponsor-title{
     font-size: 80px!important;
